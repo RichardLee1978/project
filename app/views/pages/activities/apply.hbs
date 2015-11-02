@@ -1,0 +1,67 @@
+{{#section 'head'}}
+	<link rel="stylesheet" href="/dist/css/activities/mobile.css">
+	<link rel="stylesheet" href="/dist/font-awesome-4.4.0/css/font-awesome.css">
+{{/section}}
+{{#section 'body'}}
+	<body style="background: #f3f4f6;">
+{{/section}}
+<section class="u-container-apply">
+	<div class="c-text">
+		<h3 class="c-text-name">白领时尚荧光夜跑</h3>
+		<span class="c-text-position">adadada</span>
+	</div>
+	<img class="c-iconimg" src="http://placehold.it/50x50"/>
+</section>
+<form>
+	<section class="wrapper">
+		<div class="u-input">
+		<label>您的姓名:</label><input type="text"  value="" placeholder="请输入您的姓名">
+		</div>
+		<div class="u-input">
+			<label>性别:</label>
+			<input type="radio"  name="gen"/>女
+			<input type="radio"  name="gen"/>男
+		</div>
+		<div class="u-input">
+			<label>生日:</label>
+			<input type="date" name="birthday" placeholder="请输入生日">
+		</div>
+	</section>
+</form>
+<section class="wrapper">
+	<div class="u-input">
+		<label>您的姓名:</label>
+		<span class="c-text-readonly">请输入生日</span>
+	</div>
+	<div class="u-input">
+		<label>性别:</label>
+		<span class="c-text-readonly">男</span>
+	</div>
+	<div class="u-input">
+		<label>生日:</label>
+		<span class="c-text-readonly">19780188</span>
+	</div>
+</section>
+<section class="u-apply-amount">
+ <span class="c-markname">应付金额</span>
+	<span class="c-price">0元</span>
+</section>
+<section class="u-payment">
+	<h4 class="c-title">请选择支付方式</h4>
+	{{!--
+	<div class="c-body">
+		<span class="icon icon-alipay"></span>
+		<span class="pay-name">支付宝</span>
+		<input type="radio" name="payment">
+		<div class="thin-line"></div>
+	</div>
+	--}}
+	<div class="c-body">
+		<span class="icon icon-wxpay"></span>
+		<span class="pay-name">微信支付</span>
+		<input type="radio" checked name="payment">
+	</div>
+</section>
+<section class="u-payment">
+	<input type="button" class="btn-pay" value="报名并支付"/>
+</section>

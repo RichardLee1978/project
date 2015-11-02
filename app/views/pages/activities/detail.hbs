@@ -1,0 +1,78 @@
+{{#section 'head'}}
+	<link rel="stylesheet" href="/dist/css/activities/mobile.css">
+	<link rel="stylesheet" href="/dist/font-awesome-4.4.0/css/font-awesome.css">
+{{/section}}
+{{#section 'body'}}
+	<body style="background: #f3f4f6;">
+{{/section}}
+<section class="wrapper">
+	<ul class="slider">
+		<li><img src="http://placehold.it/320x150"/></li>
+		<li><img src="http://placehold.it/320x150"/></li>
+		<li><img src="http://placehold.it/320x150"/></li>
+	</ul>
+	<ol class="dots">
+
+	</ol>
+</section>
+<section class="u-container-detail">
+	<hgroup>
+		<h1 class="c-title">白领时尚荧光夜跑2</h1>
+		<h2 class="c-price">&yen;89元/人</h2>
+	</hgroup>
+</section>
+<section class="u-container-detail">
+	<p class="c-context">
+		运动类型:跑步<br>
+		运动类型:跑步<br>
+		运动类型:跑步<br>
+		运动类型:跑步<br>
+		运动类型:跑步<br>
+		运动类型:跑步<br>
+	</p>
+</section>
+<section class="u-container-detail">
+	<p class="c-context">
+		活动报名:0/20
+	</p>
+</section>
+<section class="u-container-detail bd">
+	<span class="c-context-title">
+			<i class="fa fa-flag"></i>
+			活动介绍
+	</span>
+</section>
+<section class="u-container-detail last">
+	<p class="c-context">
+		潜水很久，第一次在segmentfault提问题，
+		最近开始研究bootstrap，也发现了font-awesome这个好东西，
+		昨天在从网上down了一份基于bootstrap的前端模板，
+		发现font-awesome图标均无法正常显示，排除了浏览器的问题，
+		因为逐个的在safari、chrome、firefox、IE11下面都测试过了
+		症状为：
+		IE11 ＝》完全不显示
+		safari、Chorome ＝》 应该显示图标的地方显示了一个个的小方框
+		在搜索引擎搜索过一些答案，发现别人同样问题只出现在firefox上面，
+		原因是：nginx的跨域访问问题
+		解决方法是在nginx中增加一个响应头：
+	</p>
+</section>
+<div class="u-tools-bar">
+	<a class="c-callphone" href="javascript:;">
+		<i class="fa fa-phone"></i>
+		联系我们
+	</a>
+	<a class="c-btns" href="javascript:;">
+		我要报名
+	</a>
+</div>
+{{#section 'script'}}
+	<script src="/dist/lib/motion.js"></script>
+	<script src="/dist/js/common.js"></script>
+	<script>
+		$(function(){
+			var YD = new YdUiKit();
+			YD.slider();
+		});
+	</script>
+{{/section}}
